@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light-Color: #e3e9ee;
+    --dark-color: #0e110e;
+}
+.main {
+    height: 90vh;
+    width: 100vw;
+    background: url(./Images/Background\ Image\ 2.jpg);
+    background-size: cover;
+}
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+.links > ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.links > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.links > ul > li > a:hover {
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    border: 0.1px solid white;
+}
+.search > input, button {
+    padding: 10px;
+    border: none;
+    font-size: 2.4vh;
+    font-weight: bolder;
+}
+.search > input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search > button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.1s ease-in;
+}
+.search > button:hover {
+    background-color: #0e110e;
+    color: white;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+    padding: 10px;
+}
+.btns > button {
+    height: 20%;
+    background-color: rgba(227, 233, 238, 0.5);
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    border: 0.2px solid white;
+    cursor: pointer;
+}
+.slides {
+    width: 100vw;
+    height: 17%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.slides > div {
+    font-size: 2rem;
+    font-weight: bolder;
+    height: 10px;
+    width: 70px;
+    background-color: white;
+    border-radius: 5px;
+}
